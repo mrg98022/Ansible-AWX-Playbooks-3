@@ -1,0 +1,10 @@
+---
+- name: Add ESXi license and assign to the ESXi host
+  vcenter_license:
+    hostname: '{{ 152.168.34.209 }}'
+    username: '{{ root }}'
+    password: '{{ ASc1video }}'
+    esxi_hostname: '{{ 152.168.34.209 }}'
+    license: 1542H-8U380-A8780-0T0AM-C97QL
+    state: present
+  delegate_to: localhost
